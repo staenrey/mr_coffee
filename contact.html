@@ -28,10 +28,74 @@
         </header>
         <div class="top-logo">
             <img class="logo-inpage" src="logo_mrcoffee.png" alt="Mr. Coffee Logo">
-            <div><h1>On vous attend !</h1></div>
         </div>
 
         <main class="contact-main">
+            <h1 class="contact-us">Dites nous tout !</h1>
+
+<!-- POP-UP -->
+            <div id="overlay">
+                <div class="pop-up">
+                    <img src="logo_dark.png" alt="Mr. Coffee logo">
+                    
+                    <p class="thanks">MERCI</p>
+                    <p class="thanks">Votre message a bien été envoyé !</p>
+                    <br>
+                    <p>Nous essaierons d’y répondre au mieux dans les plus brefs délais. À bientot chez Mr.Coffee</p>
+
+                    <button class="normal-button" id="close-popup">FERMER</button>
+                    
+                </div>
+            </div>
+
+<!-- CONTACT FORM — START -->
+
+            <form class="contact-form">
+                <label>
+                    Nom *
+                    <br>
+                    <input type="text" name="last-name" required>
+                </label><br>
+                <br>
+
+                <label>
+                    Prénom *
+                    <br>
+                    <input type="text" name="first-name" required>
+                </label><br>
+                <br>
+
+                <label>
+                    Téléphone
+                    <br>
+                    <input type="tel" pattern="^[0-9]+$" name="phone">
+                </label><br>
+                <br>
+
+                <label>
+                    Adresse mail *
+                    <br>
+                    <input type="email" name="email" required>
+                </label><br>
+                <br>
+
+                <label>
+                    Message *
+                    <br>
+                    <textarea name="message" required></textarea>
+                </label><br>
+                <br>
+
+                <input type="submit" value="ENVOYER">
+                <br>
+
+            </form>
+
+<!--CONTACT FORM - END -->
+
+        <div><h1 class="contact-header">On vous attend !</h1></div>
+
+        
            <div class="contacts-text">
                <p><b>Mr.Coffee</b><br>
                 15 place Jules Guesde<br>
@@ -65,5 +129,7 @@
             </div>
         </footer>
     </div>
+    <script src="form.js">
+    </script>
 </body>
 </html>

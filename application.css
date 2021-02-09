@@ -66,6 +66,11 @@ footer {
 
 /* HEADER AND FOOTER - END */
 
+.contact-header, .contact-us {
+
+    text-align: center;
+}
+
 .logo-inpage {
     height: 100rem;
 }
@@ -112,6 +117,87 @@ h2 {
     margin: 35rem 0;
 }
 
+/* CONTACT FORM - START */
+
+.contact-form label {
+    width: 390rem;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 2rem 2rem 1rem 5rem;
+    background-color: #b8b8b8;
+    border: none;
+    color: white;
+    font-size: 10rem;
+    font-weight: 500;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    height: 100rem;
+    resize: none;
+    padding: 10rem;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 200rem;
+    margin: 0 auto;
+    padding: 10rem;
+    border-radius: 4rem;
+    background-color: #576775;
+    
+}
+
+/* CONTACT FORM - END */
+
+/* POPUP - START */
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(168, 168, 168, 0.472);
+    display: none;
+}
+
+.pop-up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 450rem;
+    font-weight: 600;
+    border: 1rem solid #d8d7d7;
+    padding: 20rem 40rem;
+    box-sizing: border-box;
+    position: relative;
+    font-size: 10rem;
+    background-color: white;
+    margin: 50rem auto;
+}
+
+.pop-up img {
+    width: 40rem;
+    margin: 15rem;
+    position: absolute;
+    top: 10rem;
+    left: 10rem;
+}
+
+#close-popup {
+    display: block;
+    margin: 0 auto;
+}
+
+.thanks {
+    font-size: 15rem;
+    text-align: center;
+}
+
+/* POPUP - END */
 
 /* CONTACT.HTML - END */
 
@@ -356,6 +442,42 @@ h2 {
     .contacts-text {
         padding-left: 10vw;
     }
+
+/* CONTACT FORM AND POP UP */
+
+.contact-form label {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+}
+
+.pop-up {
+    width: 90%;
+    font-size: 3vw;
+    
+}
+
+.pop-up img {
+    width: 10vw;
+}
+
+.thanks {
+    font-size: 5vw;
+}
+
+#close-popup {
+    width: 30vw;
+}
+
+input[type="submit"] {
+    width: 50vw;
+    padding: 5vw 10vw;
+}
+
 
 /* ABOUT.HTML */
 
